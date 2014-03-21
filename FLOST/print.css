@@ -1,0 +1,305 @@
+
+/* Print Styles */
+@media print {
+	header { display:none; }
+	.side { display:none; }
+	.categories { display:none; }
+	.contenu { display:block; }
+	.footer { display:none; }
+	.post-comments { display:none; }
+	#pad { display:none; }
+	
+	@font-face{
+		font-family:"libertine_bolditalic";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/LinLibertine_BI-4.1.0.ttf");
+	}
+	
+	@font-face{
+		font-family:"libertine_bold";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/LinLibertine_Bd-4.1.5.ttf");
+	}
+	
+	@font-face{
+		font-family:"libertine_it";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/LinLibertine_It-4.2.6.ttf");
+	}
+	
+	@font-face{
+		font-family:"libertine_reg";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/LinLibertine_Re-4.7.5.ttf");
+	}
+	
+	@font-face{
+		font-family:"vera_mono_reg";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/VeraMono.ttf");
+	}
+	
+	@font-face{
+		font-family:"vera_mono_it";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/VeraMoIt.ttf");
+	}
+	
+	@font-face{
+		font-family:"vera_mono_bold";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/VeraMoBd.ttf");
+	}
+	
+	@font-face{
+		font-family:"vera_mono_boldit";
+		font-weight: normal;
+		font-style: normal;
+		src: url("Fonts/VeraMoBI.ttf");
+	}
+	
+	
+	body{
+		font-family:"libertine_reg";
+		font-size:16px;
+	}
+	
+	.indent{
+		margin-left:15px;
+	}
+	
+	.citation{
+		font-family:"libertine_it";
+		margin-left:15px;
+		margin-top:-16px;
+		margin-bottom:-16px;
+	}
+	
+	.retrait{
+		margin-left:15px;
+		margin-top:-16px;
+		margin-bottom:-16px;
+	}
+	
+	.contenuinterieur a{
+		font-family:"vera_mono_it";
+		font-size:80%;
+	}
+	
+	.contenuinterieur a:hover{
+		font-family:"vera_mono_boldit";
+		font-size:80%;
+	}
+	
+	.contenu{
+		width: 600px;
+		position:absolute;
+		padding-top:10px;
+	}
+	
+	.post{
+		position:relative;
+	}
+	
+	.titre2contenu{
+		font-family:"libertine_bold";
+		margin-left:15px;
+		
+	}
+	
+	.explique{
+		font-family:"libertine_bolditalic";
+		margin-left:15px;
+	}
+	
+	.contenuinterieur{
+		font-family:"libertine_reg";
+		margin-left:30px;
+		margin-top:-13px;
+	}
+	.contenuinfos{
+		font-family:"vera_mono_reg";
+		font-size:70%;
+		margin-left:30px;
+		margin-top:-9px;
+	}
+	
+	.contenuinfos a:hover{
+		font-family:"vera_mono_boldit";
+	}
+	
+	.nothing{
+		font-family:"libertine_bolditalic";
+	}
+	
+	.video{
+		width:570px;
+		margin-left:15px;
+		margin-top:20px;
+		margin-bottom:15px;
+	}
+	
+	video{
+		width:570px;
+		margin-left:15px;
+		margin-top:20px;
+	}
+	
+	.nroNotes{
+		vertical-align: super; 
+		font-size: 75%; 
+		line-height: 90%;
+	}
+	
+	
+	.notes{
+		font-size: 80%;
+		font-family:"libertine_it";
+		position: absolute;
+		left: 630px; 
+		width: 150px;
+		text-indent: -18px;
+	}
+	
+	.comment-list{
+		font-family:"vera_mono_reg";
+		font-size:75%;
+		margin-left:15px;
+	}
+	
+	.comment-list p{
+		font-family:"libertine_reg";
+		font-size:16px;
+		margin-left:15px;
+	}
+	
+	.comment-reply-title{
+		font-size:16px;	
+		font-weight:normal;
+		font-family:"libertine_bold";
+		margin-left:15px;
+		margin-bottom:-14px;
+	}
+	
+	.comment-form{
+		margin-left:30px;
+	}
+	
+	.form-allowed-tags{
+		display:none;
+	}
+	
+	.comment-form-content, textarea{
+		margin-left:15px;
+		margin-top:-10px;	
+		margin-bottom:-10px;	
+	}
+	
+	.comment-form-content, label{
+		display:none;
+	}
+	
+	.form-submit{
+		margin-left:15px;
+	}
+	.bold{
+		font-family:"libertine_bold";
+	}
+	
+	.bolditalic{
+		font-family:"libertine_bolditalic";
+	}
+	
+	.italic{
+		font-family:"libertine_it";
+	}
+	
+	nav-previous alignleft{
+		font-size:100px;
+		position:fixed;
+		top:150px;	
+		left:30px;
+	}
+	a{
+		text-decoration:none;
+		color:black;
+	}
+	
+	
+	
+	a:hover{
+		font-family:"libertine_bolditalic";
+	}
+	
+	a.lien{
+		color:black;
+		font-family:"vera_mono_it";
+		font-size:80%;
+	}
+	
+	a.lien:hover{
+		color:black;
+		font-family:"vera_mono_boldit";
+		font-size:80%;
+		letter-spacing:1px;
+	}
+	
+	a.liencategories{
+		text-decoration:none;
+		color:black;
+		font-family:"libertine_it";
+		margin-left:15px;
+	}
+	
+	a.liencategories:hover{
+		font-family:"libertine_bolditalic";
+	}
+	
+	a.liensouscategories{
+		text-decoration:none;
+		color:black;
+		font-family:"libertine_it";
+		margin-left:30px;
+	}
+	
+	a.liensouscategories:hover{
+		font-family:"libertine_bolditalic";
+	}
+	
+	a.liencontenu{
+		text-decoration:none;
+		text-decoration:underline;
+		color:black;
+		font-family:"libertine_it";
+		margin-left:15px;
+	}
+	
+	a.liencontenu:hover{
+		font-family:"libertine_bolditalic";
+	}
+	
+	a.encours{
+		text-decoration:none;
+		color:black;
+		font-family:"libertine_bolditalic";
+	}
+	
+	img{
+		width:570px;
+		margin-left:15px;
+	}
+	
+	
+	
+	a.bientot{
+		text-decoration:line-through;	
+	}
+
+}

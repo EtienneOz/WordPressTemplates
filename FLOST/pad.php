@@ -1,0 +1,1 @@
+<iframe id="pad" name='embed_readwrite' src='http://lite2.framapad.org/p/9ESh6tpUpL?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=true' ></iframe>

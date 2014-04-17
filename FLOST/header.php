@@ -10,7 +10,3 @@
   <body>
  <?php include_once("analyticstracking.php") ?>
     <div class="wrap">
-      <header id="presentation">
-        <p class="titre"><a href="http://etienneozeray.fr/libre-blog/"><?php bloginfo('name'); ?></a></p>
-        <p class="titre2"><?php bloginfo('description'); ?></p>
-      </header>

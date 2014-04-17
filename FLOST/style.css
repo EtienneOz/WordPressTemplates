@@ -18,9 +18,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @charset "utf-8";
 /**/
 
-*{
-
+.wrap{
+	margin-top:35px;
 }
+
+
+/* -------TYPOGRAPHIE----------- */
 
 @font-face{
 	font-family:"libertine_bolditalic";
@@ -78,16 +81,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	src: url("Fonts/VeraMoBI.ttf");
 }
 
+.bold{
+	font-family:"libertine_bold";
+}
+
+.bolditalic{
+	font-family:"libertine_bolditalic";
+}
+
+.italic{
+	font-family:"libertine_it";
+}
 
 body{
 	font-family:"libertine_reg";
 	font-size:16px;
 }
-
-.wrap{
-	margin-top:35px;
-}
-
 
 .indent{
 	margin-left:15px;
@@ -106,14 +115,15 @@ body{
 	margin-bottom:-16px;
 }
 
-/* -------HEADER----------- */
+/* ------- FIN TYPOGRAPHIE ----------- */
+
+
+/* ------- HEADER ----------- */
 
 #presentation{
 
-	width:300px;
-	position:fixed;
 	top:30px;
-	margin-left:15px;
+	margin-left:1%;
 	background-color:white;
 	z-index:1;
 }
@@ -134,9 +144,9 @@ body{
 	height:29px;
 }
 
-/* -------FIN HEADER----------- */
+/* ------- FIN HEADER ----------- */
 
-/* -------LOOP----------- */
+/* ------- LOOP ----------- */
 
 .contenuinterieur a{
 	font-family:"vera_mono_it";
@@ -151,10 +161,17 @@ body{
 }
 
 .contenu{
-	width: 600px;
+	width: 40%;
 	position:absolute;
 	top:15px;
-	left:345px;
+	left:20%;
+}
+
+.contenu2{
+	width: 40%;
+	position:absolute;
+	top:31px;
+	left:20%;
 }
 
 .post{
@@ -174,6 +191,7 @@ body{
 
 .contenuinterieur{
 	font-family:"libertine_reg";
+    line-height: 19px;
 	margin-left:30px;
 	margin-top:-13px;
 }
@@ -194,14 +212,14 @@ body{
 }
 
 .video{
-	width:570px;
+	width:40%;
 	margin-left:15px;
 	margin-top:20px;
 	margin-bottom:15px;
 }
 
 video{
-	width:570px;
+	width:40%;
 	margin-left:15px;
 	margin-top:20px;
 }
@@ -214,12 +232,32 @@ video{
 
 
 .notes{
-	font-size: 80%;
+	vertical-align: initial ; 
+	line-height: 130%;
+    font-size: 103%;
 	font-family:"libertine_it";
 	position: absolute;
-	left: 625px; 
-	width: 150px;
+	left: 104%; 
+	width: 30%;
 	text-indent: -18px;
+	margin-bottom:-16px;
+    word-wrap: break-word; 
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+.notesSuite{
+    text-indent:-18px; 
+    display:inline-block ;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word; 
 }
 
 /* -------FIN LOOP----------- */
@@ -227,10 +265,10 @@ video{
 /* -------SIDEBAR----------- */
 
 .side{
-	width:300px;
+	width:17%;
 	position:fixed;
-	bottom:15px;
-	margin-left:15px;
+    top:30px;
+	margin-left:1%;
 }
 
 side_lien{
@@ -245,7 +283,7 @@ side_lien{
 /* -------SEARCHFORM----------- */
 
 #form{
-	margin-top:10px;
+	margin-top:15px;
 }
 
 #s{
@@ -262,13 +300,17 @@ input{
 .titrecontenu{
 	font-family:"libertine_bold";
 	position:fixed;
-	top:-17px;
+	top:-34px;
 	padding-top:45px;
 	padding-bottom:3px;
 	background-color:white;
-	width:100%;
+	width:540px;
 	z-index:1;
 }
+
+/* -------FIN CATEGORY----------- */
+
+/* ------- FOOTER ----------- */
 
 
 .license, .license:hover{
@@ -279,16 +321,17 @@ input{
 	right:15px;
 }
 
+.license img{
+	width:45px;
+}
 
-/* -------FIN CATEGORY----------- */
+/* ------- FIN FOOTER ----------- */
 
 /* -------INDEX----------- */
 
 .categories{
 	list-style:none;
-	width:300px;
-	position:fixed;
-	top:170px;
+    margin-top:30px;
 	margin-left:0px;
 }
 
@@ -308,7 +351,7 @@ input{
 
 .pagination{
 	margin-top:30px;
-	width:600px;
+	width:540px;
 	margin-bottom:30px;
 	font-family:"libertine_it";
 }
@@ -375,17 +418,6 @@ input{
 }
 /* -------FIN COMMENT----------- */
 
-.bold{
-	font-family:"libertine_bold";
-}
-
-.bolditalic{
-	font-family:"libertine_bolditalic";
-}
-
-.italic{
-	font-family:"libertine_it";
-}
 
 nav-previous alignleft{
 	font-size:100px;
@@ -393,12 +425,14 @@ nav-previous alignleft{
 	top:150px;	
 	left:30px;
 }
+
+
+/* ------- LIENS ----------- */
+
 a{
 	text-decoration:none;
 	color:black;
 }
-
-
 
 a:hover{
 	font-family:"libertine_bolditalic";
@@ -457,20 +491,18 @@ a.encours{
 	font-family:"libertine_bolditalic";
 }
 
+/* ------- FIN LIENS ----------- */
+
+
 img{
-	width:570px;
-	margin-left:15px;
+	width:100%;
+	padding-left:15px;
 }
 
 #pad{
 	position:fixed;
 	top:35px;
-	right:15px;
-	width:275px;
+	right:1%;
+	width:22%;
 	height:70%;
-}
-
-
-a.bientot{
-	text-decoration:line-through;	
 }

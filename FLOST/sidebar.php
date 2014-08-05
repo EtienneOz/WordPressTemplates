@@ -5,6 +5,20 @@
       </header>
 <div class="categories">
 	<p class="titrecategorie">
+		<a href="http://etienneozeray.fr/libre-blog/category/ecrits/">Écrits</a>
+	</p>
+	<p class="souscategories">
+		 <?php 
+			$tags = get_tags( array(
+				'orderby' 	=> 'name', 
+				'order' 	=> 'ASC') 
+				);
+			foreach ( (array) $tags as $tag ) {
+			echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . ' </a><br/>';
+			}
+		?>
+	</p>
+	<p class="titrecategorie">
 		Ressources
 	</p>
 	<p class="souscategories">
@@ -39,24 +53,11 @@
 		?> 
 	</p>
 	<p class="titrecategorie">
-		<a href="http://etienneozeray.fr/libre-blog/category/ecrits/">Écrits</a>
-	</p>
-	<p class="souscategories">
-		 <?php 
-			$tags = get_tags( array(
-				'orderby' 	=> 'name', 
-				'order' 	=> 'ASC') 
-				);
-			foreach ( (array) $tags as $tag ) {
-			echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . ' </a><br/>';
-			}
-		?>
-	</p>
-	<p class="titrecategorie">
 		<a href="mailto:libre@etienneozeray.fr">Contact &amp; suggestions</a>
   		<!-- Bouton RSS -->
   		<br/>
-	 	<a class="side_lien" href="<?php bloginfo('rss2_url'); ?>">Flux RSS</a>
+	 	<a class="side_lien" href="<?php bloginfo('rss2_url'); ?>">Flux RSS</a><br/>
+	 	<?php if(function_exists('wp_print')) { print_link(); } ?>
 	</p>
 </div> 
 

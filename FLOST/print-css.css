@@ -1,0 +1,364 @@
+
+/* Print Styles */
+@media print {
+	header { display:none; }
+	.side { display:none; }
+	.categories { display:none; }
+	.contenu { display:block; }
+	.footer { display:none; }
+	.post-comments { display:none; }
+	#pad { display:none; }
+    .license { display: none; } 
+    .contenuinfos { display:none; } 
+	
+    @charset "utf-8";
+
+    /* -------TYPOGRAPHIE----------- */
+
+    @font-face{
+        font-family:"libertine_bolditalic";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/LinLibertine_BI-4.1.0.ttf");
+    }
+
+    @font-face{
+        font-family:"libertine_bold";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/LinLibertine_Bd-4.1.5.ttf");
+    }
+
+    @font-face{
+        font-family:"libertine_it";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/LinLibertine_It-4.2.6.ttf");
+    }
+
+    @font-face{
+        font-family:"libertine_reg";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/LinLibertine_Re-4.7.5.ttf");
+    }
+
+    @font-face{
+        font-family:"vera_mono_reg";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/VeraMono.ttf");
+    }
+
+    @font-face{
+        font-family:"vera_mono_it";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/VeraMoIt.ttf");
+    }
+
+    @font-face{
+        font-family:"vera_mono_bold";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/VeraMoBd.ttf");
+    }
+
+    @font-face{
+        font-family:"vera_mono_boldit";
+        font-weight: normal;
+        font-style: normal;
+        src: url("Fonts/VeraMoBI.ttf");
+    }
+
+    .bold{
+        font-family:"libertine_bold";
+    }
+
+    .bolditalic{
+        font-family:"libertine_bolditalic";
+    }
+
+    .italic{
+        font-family:"libertine_it";
+    }
+
+    body{
+        font-family:"libertine_reg";
+        font-size:16px;
+    }
+
+    .indent{
+        margin-left:15px;
+    }
+
+    .citation{
+        font-family:"libertine_it";
+        margin-left:15px;
+        margin-top:-16px;
+        margin-bottom:-16px;
+    }
+
+    .retrait{
+        margin-left:15px;
+        margin-top:-16px;
+        margin-bottom:-16px;
+    }
+
+    /* ------- FIN TYPOGRAPHIE ----------- */
+
+
+    /* ------- LOOP ----------- */
+
+    .contenuinterieur a{
+        font-family:"vera_mono_it";
+        font-size:72%;
+        border-bottom:1px solid black;
+    }
+
+    .contenuinterieur a:hover{
+        font-family:"vera_mono_boldit";
+        font-size:72%; 
+        border-bottom:1px solid black;
+    }
+
+    .contenu{
+        width: 75%;
+        position:absolute;
+        top:15px;
+        left:0%;
+    }
+
+    .contenu2{
+        width: 75%;
+        position:absolute;
+        top:31px;
+        left:0%;
+    }
+
+    .post{
+        position:relative;
+    }
+
+    .titre2contenu{
+        font-family:"libertine_bold";
+        margin-left:15px;
+
+    }
+
+    .explique{
+        font-family:"libertine_bolditalic";
+        margin-left:15px;
+    }
+
+    .contenuinterieur{
+        font-family:"libertine_reg";
+        line-height: 19px;
+        margin-left:30px;
+        margin-top:-13px;
+    }
+
+    .nothing{
+        font-family:"libertine_bolditalic";
+    }
+
+    .video{
+        width:75%;
+        margin-left:15px;
+        margin-top:20px;
+        margin-bottom:15px;
+    }
+
+    video{
+        width:75%;
+        margin-left:15px;
+        margin-top:20px;
+    }
+
+    .nroNotes{
+        vertical-align: super; 
+        font-size: 75%; 
+        line-height: 90%;
+    }
+
+
+.notes{
+	vertical-align: initial ; 
+	line-height: 130%;
+    font-size: 103%;
+	font-family:"libertine_it";
+	position: absolute;
+	left: 105%; 
+	width: 26%;
+	text-indent: -18px;
+	margin-bottom:-16px;
+    word-wrap: break-word; 
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+.notesSuite{
+    text-indent:-18px; 
+    display:inline-block ;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word; 
+}
+
+    /* -------FIN LOOP----------- */
+
+
+    /* -------SEARCHFORM----------- */
+
+    #form{
+        margin-top:15px;
+    }
+
+    #s{
+        font-family:"vera_mono_reg";
+    }
+
+    input{
+        font-family:"vera_mono_reg";
+    }
+    /* -------FIN SEARCHFORM----------- */
+
+
+    /* -------INDEX----------- */
+
+    .pagination{
+        margin-top:30px;
+        width:540px;
+        margin-bottom:30px;
+        font-family:"libertine_it";
+    }
+
+    .precedent{
+        text-align:left;
+        font-family:"vera_mono_it";
+        font-size:80%;
+
+    }
+
+    .suivant{
+        float:right;
+        font-family:"vera_mono_it";
+        font-size:80%;
+    }
+
+
+    /* -------FIN INDEX----------- */
+
+
+    nav-previous alignleft{
+        font-size:100px;
+        position:fixed;
+        top:150px;	
+        left:30px;
+    }
+
+
+    /* ------- LIENS ----------- */
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
+
+    a:hover{
+        font-family:"libertine_bolditalic";
+    }
+
+    a.lien{
+        color:black;
+        font-family:"vera_mono_it";
+        font-size:72%;
+    }
+
+    a.lien:hover{
+        color:black;
+        font-family:"vera_mono_boldit";
+        font-size:72%;
+        letter-spacing:1px;
+    }
+
+    a.liencategories{
+        text-decoration:none;
+        color:black;
+        font-family:"libertine_it";
+        margin-left:15px;
+    }
+
+    a.liencategories:hover{
+        font-family:"libertine_bolditalic";
+    }
+
+    a.liensouscategories{
+        text-decoration:none;
+        color:black;
+        font-family:"libertine_it";
+        margin-left:30px;
+    }
+
+    a.liensouscategories:hover{
+        font-family:"libertine_bolditalic";
+    }
+
+    a.liencontenu{
+        text-decoration:none;
+        text-decoration:underline;
+        color:black;
+        font-family:"libertine_it";
+        margin-left:15px;
+    }
+
+    a.liencontenu:hover{
+        font-family:"libertine_bolditalic";
+    }
+
+    a.encours{
+        text-decoration:none;
+        color:black;
+        font-family:"libertine_bolditalic";
+    }
+
+    /* ------- FIN LIENS ----------- */
+
+	img{
+		margin-top: 15px;
+	}
+
+	img.vertic{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	img.horiz{
+		width: 76%;
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+
+	img.horizPlus{
+		width: 88%;
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+
+	.legende{
+		font-family: vera_mono_it;
+		font-size: 70%;
+		margin-top: -12px;
+		margin-bottom: -8px;
+		text-align: center;
+	}
+
+
+}

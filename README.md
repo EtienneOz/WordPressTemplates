@@ -1,6 +1,6 @@
 WordPressTemplates
 ==================
 
-Flost: template made for http://etienneozeray.fr/libre-blog, for now not really adapted to fit to any blog.
+Flost: template originaly made for [Pour un design graphique libre](http://etienneozeray.fr/libre-blog) blog.
 
-See http://codex.wordpress.org/Using_Themes#Adding_New_Themes for install instructions.
+See [here](http://codex.wordpress.org/Using_Themes#Adding_New_Themes) for install instructions.

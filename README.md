@@ -9,7 +9,7 @@ See [here](http://codex.wordpress.org/Using_Themes#Adding_New_Themes) for instal
 
 [GNU/GPLv2](https://github.com/EtienneOz/WordPressTemplates/blob/master/LICENSE)
 
-## ScreenShot
+## ScreenShots
 
 ![screenshot](https://github.com/EtienneOz/WordPressTemplates/blob/master/FLOST/screenshot.png)
 ![screenshot2](https://github.com/EtienneOz/WordPressTemplates/blob/master/FLOST/screenshot2.png)

@@ -8,3 +8,7 @@ See [here](http://codex.wordpress.org/Using_Themes#Adding_New_Themes) for instal
 # License
 
 [GNU/GPLv2](https://github.com/EtienneOz/WordPressTemplates/blob/master/LICENSE)
+
+## ScreenShot
+
+![screenshot](https://github.com/EtienneOz/WordPressTemplates/blob/master/FLOST/screenshot.png)
